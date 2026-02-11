@@ -90,7 +90,7 @@ static void ViewAllStudents(IStudentService service)
 
     foreach (var student in students)
     {
-        Console.WriteLine(student);
+        Console.WriteLine("hello" + student);
     }
 }
 
