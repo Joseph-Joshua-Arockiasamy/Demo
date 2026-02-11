@@ -2,6 +2,7 @@ using DemoApp.Helpers;
 using DemoApp.Interfaces;
 using DemoApp.Models;
 using DemoApp.Services;
+using System;
 
 // ============================================
 // Student Management System - Demo Application
@@ -35,9 +36,6 @@ while (running)
             DeleteExistingStudent(studentService);
             break;
         case 6:
-            ShowStatistics(studentService);
-            break;
-        case 7:
             running = false;
             Console.WriteLine("Thank you for using Student Management System!");
             break;
