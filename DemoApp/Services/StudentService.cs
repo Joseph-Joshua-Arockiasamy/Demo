@@ -56,7 +56,8 @@ public class StudentService : IStudentService
 
     public List<Student> GetStudentsByGrade(string grade)
     {
-        return _students.Where(s => s.Grade.Equals(grade, StringComparison.OrdinalIgnoreCase)).ToList();
+        var demo = grade;
+        return _students.Where(s => s.Grade.Equals(demo, StringComparison.OrdinalIgnoreCase)).ToList();
     }
 
     public double CalculateAverageAge()
