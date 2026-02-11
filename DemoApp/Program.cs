@@ -30,14 +30,11 @@ while (running)
             break;
         case 4:
             UpdateExistingStudent(studentService);
-            break;
+            
         case 5:
             DeleteExistingStudent(studentService);
             break;
         case 6:
-            ShowStatistics(studentService);
-            break;
-        case 7:
             running = false;
             Console.WriteLine("Thank you for using Student Management System!");
             break;
