@@ -20,7 +20,7 @@ public static class InputHelper
                 return result;
             }
 
-            Console.WriteLine($"Please enter a valid number between {min} and {max}.");
+           // Console.WriteLine($"Please enter a valid number between {min} and {max}.");
         }
     }
 
