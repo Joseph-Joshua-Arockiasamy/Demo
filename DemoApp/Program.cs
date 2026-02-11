@@ -30,7 +30,7 @@ while (running)
             break;
         case 4:
             UpdateExistingStudent(studentService);
-            break;
+            
         case 5:
             DeleteExistingStudent(studentService);
             break;
