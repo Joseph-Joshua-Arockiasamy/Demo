@@ -5,7 +5,7 @@ namespace DemoApp.Helpers;
 /// </summary>
 public static class InputHelper
 {
-    public static int GetValidInteger(string prompt, int min = int.MinValue, int max = int.MaxValue)
+    public static int GetValidInteger(string prompt, int minVal = int.MinValue, int maxVal = int.MaxValue)
     {
         int result;
         
@@ -15,12 +15,13 @@ public static class InputHelper
             Console.Write(prompt);
             string? input = Console.ReadLine();
 
-            if (int.TryParse(input, out result) && result >= min && result <= max)
+            if (int.TryParse(input, out result) && result >= minVal && result <= maxVal)
             {
                 return result;
             }
 
-            Console.WriteLine($"Please enter a valid number between {min} and {max}.");
+            Console.WriteLine($"Please enter a valid number between {minVal} and {maxVal}.");
+
         }
     }
 

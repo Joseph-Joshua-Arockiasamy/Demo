@@ -14,4 +14,5 @@ public interface IStudentService
     bool DeleteStudent(int id);
     List<Student> GetStudentsByGrade(string grade);
     double CalculateAverageAge();
+    List<Student> GetStudentsByEmail(string? email);
 }
